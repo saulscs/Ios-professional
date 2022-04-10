@@ -15,9 +15,11 @@ protocol OnboardingContainerViewControllerDelegate: AnyObject {
 class OnboardingContainerViewController: UIViewController {
 
     let pageViewController: UIPageViewController
+    let closeButton = UIButton(type: .system)
+    
     var pages = [UIViewController]()
     var currentVC: UIViewController
-    var closeButton = UIButton(type: .system)
+    
     
     weak var delegate: OnboardingContainerViewControllerDelegate?
     
@@ -75,10 +77,11 @@ class OnboardingContainerViewController: UIViewController {
         closeButton.setTitle("Close", for: [])
         closeButton.addTarget(self, action: #selector(closeTapped), for: .primaryActionTriggered)
         
-        view.addSubview(closeButton)
     }
     
     private func layout(){
+        view.addSubview(closeButton)
+        
         NSLayoutConstraint.activate([
             closeButton.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 2),
             closeButton.topAnchor.constraint(equalToSystemSpacingBelow: view.safeAreaLayoutGuide.topAnchor, multiplier: 2)

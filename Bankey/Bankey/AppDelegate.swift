@@ -11,9 +11,11 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var hasOnboarding = false
     
     let loginViewController = LoginViewController()
     let onboardingContainerViewController = OnboardingContainerViewController()
+    let dummyViewController = DummyViewController()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool{
         
@@ -23,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //window?.rootViewController = LoginViewController()
         loginViewController.delegate = self
         onboardingContainerViewController.delegate = self
+        dummyViewController.logoutDelegate = self
         
         window?.rootViewController = loginViewController
         
@@ -30,19 +33,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         return true
-    }
-}
-
-extension AppDelegate: LoginViewControllerDelegate {
-    func didLogin() {
-        setRootViewController(onboardingContainerViewController)
-    }
-}
-
-extension AppDelegate: OnboardingContainerViewControllerDelegate {
-    func didFinishOnboarding() {
-        //TODO: Display home screen
-        print("foo - Did onboard")
     }
 }
 
@@ -62,3 +52,30 @@ extension AppDelegate {
                           completion: nil)
     }
 }
+
+extension AppDelegate: LoginViewControllerDelegate {
+    func didLogin() {
+        if hasOnboarding {
+            setRootViewController(dummyViewController)
+        } else {
+            setRootViewController(onboardingContainerViewController)
+        }
+        
+    }
+}
+
+extension AppDelegate: OnboardingContainerViewControllerDelegate {
+    func didFinishOnboarding() {
+        hasOnboarding = true
+        //TODO: Display home screen
+       setRootViewController(dummyViewController)
+    }
+}
+
+extension AppDelegate: LogoutDelegate {
+    func didLogout() {
+        setRootViewController(loginViewController)
+    }
+}
+
+
