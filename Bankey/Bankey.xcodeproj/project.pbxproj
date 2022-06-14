@@ -27,6 +27,8 @@
 		C23B5F6B28036E6800D81EC0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B5F6A28036E6800D81EC0 /* MainViewController.swift */; };
 		C23B5F6E2803B7A500D81EC0 /* AccountSumaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B5F6D2803B7A500D81EC0 /* AccountSumaryViewController.swift */; };
 		C25A4A8428566968004D916D /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25A4A8328566968004D916D /* ShakeyBellView.swift */; };
+		C25A4A8628568BF4004D916D /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25A4A8528568BF4004D916D /* Date+Utils.swift */; };
+		C25C52A5285816E200B0024E /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25C52A4285816E200B0024E /* AccountSummaryViewController+Networking.swift */; };
 		C2FB402E27FA7908004298A7 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FB402D27FA7908004298A7 /* OnboardingContainerViewController.swift */; };
 		C2FB403027FA8270004298A7 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FB402F27FA8270004298A7 /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
@@ -65,6 +67,8 @@
 		C23B5F6A28036E6800D81EC0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C23B5F6D2803B7A500D81EC0 /* AccountSumaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSumaryViewController.swift; sourceTree = "<group>"; };
 		C25A4A8328566968004D916D /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
+		C25A4A8528568BF4004D916D /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
+		C25C52A4285816E200B0024E /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
 		C2FB402D27FA7908004298A7 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		C2FB402F27FA8270004298A7 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,6 +179,7 @@
 				C23AA94328504D7F00CE1E4D /* DecimalUtils.swift */,
 				C23AA94528504DE400CE1E4D /* CurrencyFormatter.swift */,
 				C23AA9562852D8A800CE1E4D /* NSNotificationName.swift */,
+				C25A4A8528568BF4004D916D /* Date+Utils.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				C23B5F6D2803B7A500D81EC0 /* AccountSumaryViewController.swift */,
+				C25C52A4285816E200B0024E /* AccountSummaryViewController+Networking.swift */,
 				C20097BA284EF82B00E4263C /* Header */,
 				C20097BB284EF85C00E4263C /* Cell */,
 			);
@@ -309,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C23B5F6427FFB17000D81EC0 /* DummyViewController.swift in Sources */,
+				C25C52A5285816E200B0024E /* AccountSummaryViewController+Networking.swift in Sources */,
 				C23AA9592852E47B00CE1E4D /* UITextField+SecuredToggle.swift in Sources */,
 				C25A4A8428566968004D916D /* ShakeyBellView.swift in Sources */,
 				C20097BD284EF87F00E4263C /* AccountSummaryCell.swift in Sources */,
@@ -326,6 +333,7 @@
 				C20ABC7E27F0145A00842D31 /* AppDelegate.swift in Sources */,
 				C23B5F67280354E500D81EC0 /* LocalState.swift in Sources */,
 				C23B5F6B28036E6800D81EC0 /* MainViewController.swift in Sources */,
+				C25A4A8628568BF4004D916D /* Date+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
