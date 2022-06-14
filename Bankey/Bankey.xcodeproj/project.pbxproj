@@ -29,6 +29,8 @@
 		C25A4A8428566968004D916D /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25A4A8328566968004D916D /* ShakeyBellView.swift */; };
 		C25A4A8628568BF4004D916D /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25A4A8528568BF4004D916D /* Date+Utils.swift */; };
 		C25C52A5285816E200B0024E /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25C52A4285816E200B0024E /* AccountSummaryViewController+Networking.swift */; };
+		C25C52A92859547700B0024E /* ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25C52A82859547700B0024E /* ProfileTests.swift */; };
+		C25C52AB285954F900B0024E /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25C52AA285954F900B0024E /* AccountTests.swift */; };
 		C2FB402E27FA7908004298A7 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FB402D27FA7908004298A7 /* OnboardingContainerViewController.swift */; };
 		C2FB403027FA8270004298A7 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FB402F27FA8270004298A7 /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
@@ -69,6 +71,8 @@
 		C25A4A8328566968004D916D /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
 		C25A4A8528568BF4004D916D /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
 		C25C52A4285816E200B0024E /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
+		C25C52A82859547700B0024E /* ProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTests.swift; sourceTree = "<group>"; };
+		C25C52AA285954F900B0024E /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
 		C2FB402D27FA7908004298A7 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		C2FB402F27FA8270004298A7 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,7 +169,8 @@
 		C23AA94C2852C85500CE1E4D /* BankeyUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				C23AA9542852C92300CE1E4D /* CurrencyFormatterTests.swift */,
+				C25C52A72859546300B0024E /* AccountSummary */,
+				C25C52A62859544E00B0024E /* Utils */,
 			);
 			path = BankeyUnitTests;
 			sourceTree = "<group>";
@@ -201,6 +206,23 @@
 				C25A4A8328566968004D916D /* ShakeyBellView.swift */,
 			);
 			name = Components;
+			sourceTree = "<group>";
+		};
+		C25C52A62859544E00B0024E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C23AA9542852C92300CE1E4D /* CurrencyFormatterTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C25C52A72859546300B0024E /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				C25C52A82859547700B0024E /* ProfileTests.swift */,
+				C25C52AA285954F900B0024E /* AccountTests.swift */,
+			);
+			path = AccountSummary;
 			sourceTree = "<group>";
 		};
 		C2FB402C27FA78BF004298A7 /* Onboarding */ = {
@@ -342,6 +364,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C23AA9552852C92300CE1E4D /* CurrencyFormatterTests.swift in Sources */,
+				C25C52AB285954F900B0024E /* AccountTests.swift in Sources */,
+				C25C52A92859547700B0024E /* ProfileTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
