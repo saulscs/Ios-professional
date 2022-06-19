@@ -33,6 +33,8 @@
 		C25C52AB285954F900B0024E /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25C52AA285954F900B0024E /* AccountTests.swift */; };
 		C25C52AD285ACC0200B0024E /* SkeletonLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25C52AC285ACC0200B0024E /* SkeletonLoadable.swift */; };
 		C25C52AF285ACCE300B0024E /* SkeletonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25C52AE285ACCE300B0024E /* SkeletonCell.swift */; };
+		C2702E7F285FAAF300E55F21 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2702E7E285FAAF300E55F21 /* ProfileManager.swift */; };
+		C2702E81285FAD2A00E55F21 /* AccountSummaryViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2702E80285FAD2A00E55F21 /* AccountSummaryViewControllerTest.swift */; };
 		C2FB402E27FA7908004298A7 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FB402D27FA7908004298A7 /* OnboardingContainerViewController.swift */; };
 		C2FB403027FA8270004298A7 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FB402F27FA8270004298A7 /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
@@ -77,6 +79,8 @@
 		C25C52AA285954F900B0024E /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
 		C25C52AC285ACC0200B0024E /* SkeletonLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonLoadable.swift; sourceTree = "<group>"; };
 		C25C52AE285ACCE300B0024E /* SkeletonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCell.swift; sourceTree = "<group>"; };
+		C2702E7E285FAAF300E55F21 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		C2702E80285FAD2A00E55F21 /* AccountSummaryViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewControllerTest.swift; sourceTree = "<group>"; };
 		C2FB402D27FA7908004298A7 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		C2FB402F27FA8270004298A7 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -198,6 +202,7 @@
 		C23B5F6C2803B75200D81EC0 /* AccountSummary */ = {
 			isa = PBXGroup;
 			children = (
+				C2702E7D285FAAD600E55F21 /* Networking */,
 				C23B5F6D2803B7A500D81EC0 /* AccountSumaryViewController.swift */,
 				C25C52A4285816E200B0024E /* AccountSummaryViewController+Networking.swift */,
 				C20097BA284EF82B00E4263C /* Header */,
@@ -227,8 +232,17 @@
 			children = (
 				C25C52A82859547700B0024E /* ProfileTests.swift */,
 				C25C52AA285954F900B0024E /* AccountTests.swift */,
+				C2702E80285FAD2A00E55F21 /* AccountSummaryViewControllerTest.swift */,
 			);
 			path = AccountSummary;
+			sourceTree = "<group>";
+		};
+		C2702E7D285FAAD600E55F21 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C2702E7E285FAAF300E55F21 /* ProfileManager.swift */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 		C2FB402C27FA78BF004298A7 /* Onboarding */ = {
@@ -348,6 +362,7 @@
 				C25A4A8428566968004D916D /* ShakeyBellView.swift in Sources */,
 				C20097BD284EF87F00E4263C /* AccountSummaryCell.swift in Sources */,
 				C20097B7284ED38100E4263C /* AccountSummaryHeaderView.swift in Sources */,
+				C2702E7F285FAAF300E55F21 /* ProfileManager.swift in Sources */,
 				C20ABC9627F01CC400842D31 /* LoginView.swift in Sources */,
 				C23AA94628504DE400CE1E4D /* CurrencyFormatter.swift in Sources */,
 				C23B5F6E2803B7A500D81EC0 /* AccountSumaryViewController.swift in Sources */,
@@ -374,6 +389,7 @@
 				C23AA9552852C92300CE1E4D /* CurrencyFormatterTests.swift in Sources */,
 				C25C52AB285954F900B0024E /* AccountTests.swift in Sources */,
 				C25C52A92859547700B0024E /* ProfileTests.swift in Sources */,
+				C2702E81285FAD2A00E55F21 /* AccountSummaryViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
