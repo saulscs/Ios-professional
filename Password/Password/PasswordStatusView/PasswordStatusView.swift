@@ -127,7 +127,7 @@ extension PasswordStatusView {
             ? specialCharacterCriteriaView.isCriteriaMet = true
             : specialCharacterCriteriaView.reset()
         } else {
-            // Focus lost (☑️ or ❌)
+            // Focus lost (✅ or ❌)
             lengthCriteriaView.isCriteriaMet = lengthAndNoSpaceMet
             uppercaseCriteriaView.isCriteriaMet = uppercaseMet
             lowerCaseCriteriaView.isCriteriaMet = lowercaseMet
@@ -160,5 +160,21 @@ extension PasswordStatusView {
         lowerCaseCriteriaView.reset()
         digitCriteriaView.reset()
         specialCharacterCriteriaView.reset()
+    }
+}
+
+// MARK: - Tests
+
+extension PasswordCriteriaView {
+    var isCheckMarkImage: Bool {
+        return imageView.image == checkmarkImage
+    }
+    
+    var isXmarkImage: Bool {
+        return imageView.image == xmarkImage
+    }
+    
+    var isResetImage: Bool {
+        return imageView.image == circleImage
     }
 }
